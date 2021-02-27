@@ -13,3 +13,7 @@ plt.show()
 # Using reverse colormap to display image properly
 plt.imshow(img_array, cmap='Greys_r')
 plt.show()
+
+# plotting the histogram for image after flatttening
+plt.hist(img_array.flatten(), bins=10)
+plt.show()
