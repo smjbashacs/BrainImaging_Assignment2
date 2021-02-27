@@ -1,4 +1,5 @@
 import matplotlib.pyplot as plt
+from scipy import ndimage
 
 # Reading Brain.jpg image to numpy array
 img_array = plt.imread('Brain.jpg')
