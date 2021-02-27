@@ -17,3 +17,7 @@ plt.show()
 # plotting the histogram for image after flatttening
 plt.hist(img_array.flatten(), bins=10)
 plt.show()
+
+# plotting the histogram for image without flattening
+plt.hist(img_array, bins=10)
+plt.show()
