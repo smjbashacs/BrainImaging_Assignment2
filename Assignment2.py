@@ -22,3 +22,15 @@ plt.show()
 # plotting the histogram for image without flattening
 plt.hist(img_array, bins=10)
 plt.show()
+
+# Applying guassian filter for image smoothing with sigma values = 5,10,20,30,40,50
+sigmavalues = [5, 10, 20, 30, 40, 50]
+for sigma in sigmavalues:
+    image_smooth = ndimage.gaussian_filter(img_array, sigma=sigma)
+    # Displaying image after smoothing
+    plt.imshow(image_smooth)
+    plt.show()
+
+    # Displaying histogram for smoothed image
+    plt.hist(image_smooth.flatten(), bins=10)
+    plt.show()
